@@ -5,7 +5,8 @@ let size = 50;
 let isRunning = true;
 
 function setup(){
-	canvas = createCanvas(600, 600);
+	canvas = createCanvas(size*10, size*10);
+	canvas.parent('#canvas');
 
 	for(let j = 0; j < size; j++){
 		for(let i = 0; i < size; i++){
@@ -14,7 +15,7 @@ function setup(){
 	}
 
 	for(let i = 0; i < size*size; i++){
-		if(random(1) > 0.1) cells[i].fatal = true;
+		if(random(1) > 0.09) cells[i].fatal = true;
 		else cells[i].fatal = false;
 
 		cells[i].update();
@@ -22,11 +23,23 @@ function setup(){
 	}
 
 	slider = createSlider(1, 15, 5);
+	slider.parent('#slider');
 	
 
 	button1 = createButton("Start");
+	button1.parent('#start');
+	button1.style('background-color', 'black');
+	button1.style('color', 'white');
+	button1.style('font-size', '20px');
+	button1.style('border', '0');
 	button1.mousePressed(startSimulation);
+
 	button2 = createButton("Stop");
+	button2.parent('#stop');
+	button2.style('background-color', 'black');
+	button2.style('color', 'white');
+	button2.style('font-size', '20px');
+	button2.style('border', '0');
 	button2.mousePressed(stopSimulation);
 
 	
