@@ -13,11 +13,10 @@ body{
 	background: black;
 }
 
-
 #title{
 	color: white;
 	font-size: 40px;
-	margin: 5px;
+	margin-top: 5px;
 	padding: 5px;
 	text-align: center;
 }
@@ -25,25 +24,31 @@ body{
 #subtitle{
 	color: white;
 	font-size: 30px;
-	margin: 5px;
+	margin-bottom: 5px;
 	padding: 5px;
 	text-align: center;
 }
 
 #canvas{
-
 	text-align: center;
+}
+
+.button{
+	text-align: center;
+}
+
+#start{
+	display: inline-block;
+	margin: 8px 5px;
+	padding: 2px;
+}
+
+#stop{
+	display: inline-block;
+	margin: 8px 5px;
+	padding: 2px;
 }
 
 #slider{
-	margin: 5px;
-	padding: 5px;
-
 	text-align: center;
-}
-
-#n{
-	text-align: center;
-	font-size: 20px;
-	color: white;
 }
