@@ -22,7 +22,7 @@ function setup(){
 		cells[i].show();
 	}
 
-	slider = createSlider(1, 15, 5);
+	slider = createSlider(1, 20, 5);
 	slider.parent('#slider');
 	
 
